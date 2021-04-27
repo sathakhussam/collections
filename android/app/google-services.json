@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "527244879050",
+    "project_id": "collections-uzham",
+    "storage_bucket": "collections-uzham.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:527244879050:android:fcd233690e08a59a8fc033",
+        "android_client_info": {
+          "package_name": "com.downshore.collections"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "527244879050-cq1ebjhd3dud6udabt7m4o0qp7lvvo7q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDekzIlOlWhVVipWlm4Y1Ohsk9z1mt02_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "527244879050-cq1ebjhd3dud6udabt7m4o0qp7lvvo7q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
