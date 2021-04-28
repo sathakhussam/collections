@@ -17,4 +17,4 @@ flutter run
 
 ## Screenshot Of The APP
 
-![alt text](/screenshot/screenshot.jpg?raw=true)
+![alt text](/screenshots/screenshot.jpg?raw=true)
