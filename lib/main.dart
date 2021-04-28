@@ -1,3 +1,4 @@
+import 'package:collections/pages/discover.dart';
 import 'package:collections/pages/home.dart';
 import 'package:flutter/material.dart';
 
@@ -10,8 +11,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      routes: {
+        'home': (BuildContext ctx) => HomePage(),
+        'discover': (BuildContext ctx) => DiscoverPage(),
+      },
+      theme: ThemeData(
+        accentColor: Colors.grey[100],
+      ),
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      initialRoute: 'home',
     );
   }
 }

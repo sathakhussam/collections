@@ -2,6 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class NavigationBar extends StatelessWidget {
+  final title;
+  final actionIcon;
+
+  NavigationBar({this.title, this.actionIcon});
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -12,17 +17,14 @@ class NavigationBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
-            'Collections',
+            this.title,
             style: TextStyle(
                 fontFamily: "Gilroy-Bold",
                 letterSpacing: 1.2,
                 fontWeight: FontWeight.w800,
                 fontSize: 28.0),
           ),
-          Icon(
-            FontAwesomeIcons.solidPaperPlane,
-            size: 22.0,
-          )
+          this.actionIcon,
         ],
       ),
     );
