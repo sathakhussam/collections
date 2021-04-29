@@ -5,19 +5,24 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class ProfilePage extends StatelessWidget {
   // Constants
-  final NavigationIcon = Icon(
-    FontAwesomeIcons.userAlt,
-    size: 22.0,
-  );
 
   @override
   Widget build(BuildContext context) {
+    final NavigationIcon = IconButton(
+        padding: EdgeInsets.all(0),
+        onPressed: () {
+          Navigator.pushNamed(context, "add_post");
+        },
+        icon: Icon(
+          FontAwesomeIcons.plus,
+          size: 22.0,
+        ));
     return Scaffold(
       bottomNavigationBar: CustomBottomBar(),
       body: SafeArea(
         child: ListView(
           children: [
-            NavigationBar(title: "tamilanda", actionIcon: this.NavigationIcon),
+            NavigationBar(title: "tamilanda", actionIcon: NavigationIcon),
             SizedBox(height: 10.0),
             CircleAvatar(
               backgroundColor: Color(0xffc4c4c4),

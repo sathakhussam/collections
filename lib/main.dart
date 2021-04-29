@@ -1,3 +1,4 @@
+import 'package:collections/pages/add_post.dart';
 import 'package:collections/pages/discover.dart';
 import 'package:collections/pages/home.dart';
 import 'package:collections/pages/profile.dart';
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
         'home': (BuildContext ctx) => HomePage(),
         'discover': (BuildContext ctx) => DiscoverPage(),
         'profile': (BuildContext ctx) => ProfilePage(),
+        'add_post': (BuildContext ctx) => AddPostPage(),
       },
       theme: ThemeData(
         accentColor: Colors.grey[100],
