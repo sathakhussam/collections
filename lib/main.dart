@@ -1,5 +1,6 @@
 import 'package:collections/pages/discover.dart';
 import 'package:collections/pages/home.dart';
+import 'package:collections/pages/profile.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
       routes: {
         'home': (BuildContext ctx) => HomePage(),
         'discover': (BuildContext ctx) => DiscoverPage(),
+        'profile': (BuildContext ctx) => ProfilePage(),
       },
       theme: ThemeData(
         accentColor: Colors.grey[100],

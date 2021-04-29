@@ -38,19 +38,27 @@ class CustomBottomBar extends StatelessWidget {
                 size: 25.0,
               ),
             ),
-            Icon(
-              FontAwesomeIcons.userCircle,
-              color: ModalRoute.of(context).settings.name == "profile"
-                  ? Colors.black.withOpacity(1)
-                  : Colors.black.withOpacity(.5),
-              size: 25.0,
+            GestureDetector(
+              onTap: () {
+                if (ModalRoute.of(context).settings.name != "profile") {
+                  Navigator.of(context).popAndPushNamed("profile");
+                }
+              },
+              child: Icon(
+                FontAwesomeIcons.userCircle,
+                color: ModalRoute.of(context).settings.name == "profile"
+                    ? Colors.black.withOpacity(1)
+                    : Colors.black.withOpacity(.5),
+                size: 25.0,
+              ),
             ),
           ],
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
         ),
         decoration: BoxDecoration(
-            border: Border(top: BorderSide(color: Color(0xff000000)))),
+            border: Border(
+                top: BorderSide(color: Color(0xff888888).withOpacity(0.5)))),
         height: 55.0,
       ),
     );
