@@ -27,14 +27,14 @@ class Post extends StatelessWidget {
                         style: TextStyle(
                             fontFamily: "Gilroy-Bold",
                             fontWeight: FontWeight.w800,
-                            fontSize: 16.0),
+                            fontSize: 15.0),
                       ),
                       Text(
                         'Keelakarai',
                         style: TextStyle(
                             color: Color(0xff989898),
                             fontFamily: "Gilroy",
-                            fontSize: 14.0),
+                            fontSize: 13.0),
                       )
                     ],
                   )
