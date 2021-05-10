@@ -15,7 +15,7 @@ class DiscoverPage extends StatelessWidget {
           children: [
             NavigationBar(
               title: "Discover",
-              actionIcon: Icon(FontAwesomeIcons.search),
+              actionIcon: [Icon(FontAwesomeIcons.search)],
             ),
             SearchBar(),
             SizedBox(

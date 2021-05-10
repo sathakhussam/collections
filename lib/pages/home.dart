@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
           children: [
             NavigationBar(
               title: "Collections",
-              actionIcon: Icon(FontAwesomeIcons.solidPaperPlane, size: 22.0),
+              actionIcon: [Icon(FontAwesomeIcons.solidPaperPlane, size: 22.0)],
             ),
             Container(
               margin: EdgeInsets.symmetric(horizontal: 25.0, vertical: 15.0),

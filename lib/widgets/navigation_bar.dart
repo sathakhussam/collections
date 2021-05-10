@@ -20,11 +20,10 @@ class NavigationBar extends StatelessWidget {
             this.title,
             style: TextStyle(
                 fontFamily: "Gilroy-Bold",
-                letterSpacing: 1.2,
                 fontWeight: FontWeight.w800,
                 fontSize: 28.0),
           ),
-          this.actionIcon,
+          Row(children: this.actionIcon),
         ],
       ),
     );
